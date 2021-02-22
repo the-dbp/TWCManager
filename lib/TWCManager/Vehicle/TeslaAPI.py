@@ -882,7 +882,7 @@ class TeslaAPI:
                                     + '" when trying to '
                                     + startOrStop
                                     + " car charging via Tesla car API.  Will try again later."
-                                    + "\nIf this error persists, please private message user CDragon at http://teslamotorsclub.com with a copy of this error.",
+                                    + "\nIf this error persists, please file an issue at https://github.com/ngardiner/TWCManager/ with a copy of this error.",
                                 )
                                 result = "error"
                                 self.updateCarApiLastErrorTime(vehicle)
