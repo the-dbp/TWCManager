@@ -84,3 +84,13 @@ jobs:
       - name: "Start TWCManager"
         run: python3 -m TWCManager
 
+  twcmanager-raspbian-stretch:
+    runs-on: [ "self-hosted", "raspbian_stretch" ]
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "Build Project"
+        run: CI=1 make build
+
+
